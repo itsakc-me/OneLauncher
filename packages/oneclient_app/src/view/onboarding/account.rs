@@ -18,7 +18,6 @@ impl Component for OnboardingAccount {
         let msa = use_microsoft_login();
 
         let account = try_default_account(&account_query);
-        let has_account = account.is_some();
 
         let content = rect()
             .vertical()
@@ -26,7 +25,7 @@ impl Component for OnboardingAccount {
             .spacing(24.)
             .child(step_heading(
                 "Account",
-                "Before you continue, we require you to own a copy of Minecraft: Java Edition.",
+                "Sign in with Microsoft to use your Minecraft account, or continue without one.",
             ))
             .child(match &account {
                 Some(account) => account_preview(account).into_element(),
@@ -44,7 +43,7 @@ impl Component for OnboardingAccount {
             onboarding_nav(
                 Some(Route::OnboardingLanguage {}),
                 Route::OnboardingBundles {},
-                has_account,
+                true,
             ),
         );
 
