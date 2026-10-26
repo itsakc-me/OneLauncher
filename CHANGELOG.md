@@ -12,6 +12,7 @@
 - Added thanos mod for troubleshotting cluster mods (binary search)
 - Added the Wardrobe, where you can equip Poly+ cosmetics, change your Minecraft cape, save outfits and skins, and buy cosmetics by [Deftu](https://github.com/Deftu)
 - The wardrobe preview shows Poly+ cosmetics and plays emotes on a new 3D player renderer by [LynithDev](https://github.com/LynithDev)
+- The wardrobe lets you pick the particle color of your aura, and the 3D preview shows it by [LynithDev](https://github.com/LynithDev)
 
 - Clusters can import modpacks
 
@@ -21,19 +22,24 @@
 
 - Added organizations showing up in mods pages in browser by [rozwader](https://github.com/rozwader)
 - Fixed the browser replaying its page animation and losing the picked cluster when switching cluster or type by [rozwader](https://github.com/rozwader)
+- Bundle updates download the largest files first so they finish sooner by [tunaseckin](https://github.com/tunaseckin)
 - Fixed launching with half-updated bundle mods: bundle content is now fully downloaded before any of it is swapped in, so a failed or offline download keeps the current mods and still launches, and a failure while swapping is retried once and stops the launch if it still fails by [Wyvest](https://github.com/Wyvest)
 - Added warning when a user is trying to install a different version of already bundled mod
 - Added a "Deleted" tab in mods list, where deleted bundled mods are stored by [rozwader](https://github.com/rozwader)
 - Game logs also hide the session ID Minecraft prints on startup by [lunaynx](https://github.com/lunaynx)
 - Added changelog button for mods in the update modal by [rozwader](https://github.com/rozwader)
 - Added dependency checking when turning off a mod
+- The create dialog shows the Java version a game version actually launches with by [tunaseckin](https://github.com/tunaseckin)
 - Disabled ability to search CurseForge on Orinthe clusters (CurseForge doesn't provide Orinthe compatible mods) by [rozwader](https://github.com/rozwader)
 - Fixed mods auto enabling (after being disabled) when added from declined bundles (eg. skyblock bundle) by [rozwader](https://github.com/rozwader)
+- Switching an instance to a dedicated folder offers to bring its shared worlds and settings along by [tunaseckin](https://github.com/tunaseckin)
 - Added option to choose from dedicated and shared dir while creating OneClient cluster instance by [rozwader](https://github.com/rozwader)
+- Fixed a test that depended on JSON key order by [tunaseckin](https://github.com/tunaseckin)
 - Fixed too long names overflowing in the drag and drop window by [rozwader](https://github.com/rozwader)
 - Added `ONECLIENT_DISABLE_JAVA_AUTOINSTALL` and `ONECLIENT_LAUNCHER_EXE` environment overrides for packagers by [saadndm](https://github.com/saadndm)
 - Added ability to export clusters list of mods to clipboard
 - Fixed filters resetting when you change a tab in cluster view by [rozwader](https://github.com/rozwader)
+- Stopping a game from the launcher lets it save and close before forcing it to quit on macOS and Linux by [tunaseckin](https://github.com/tunaseckin)
 - Added hidden packages filter turning on when user searches packages thru searchbar, by [rozwader](https://github.com/rozwader)
 - Fixed a black bar at the top and offset content on Windows with Intel integrated graphics by [LynithDev](https://github.com/LynithDev)
 - Fixed resource packs and shaders edited in the file explorer being overwritten with the original on launch by [Wyvest](https://github.com/Wyvest)
@@ -44,7 +50,9 @@
 - Added a button for opening logs from launcher by [rozwader](https://github.com/rozwader)
 - Added a dropdown for opengl/vulkan graphic backend in cluster with version 26.2 and above by [rozwader](https://github.com/rozwader)
 - Added a Select button to the content list for enabling, disabling or deleting several items at once by [Wyvest](https://github.com/Wyvest)
+- Fixed the color picker and dropdowns opening outside the window on high-DPI displays by [LynithDev](https://github.com/LynithDev)
 - Changed the order of settings in cluster settings by [rozwader](https://github.com/rozwader)
+- Desktop shortcuts for modpack clusters now use the modpack's icon by [LynithDev](https://github.com/LynithDev)
 - Fixed text wrapping up weirdly in the new instance creator by [rozwader](https://github.com/rozwader)
 - Added the native shadow, border and rounded corners to the window on Windows by [LynithDev](https://github.com/LynithDev)
 
